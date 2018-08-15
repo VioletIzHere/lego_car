@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo chmod a=rwx /sys/module/bluetooth/parameters/disable_ertm
+echo 1 > /sys/module/bluetooth/parameters/disable_ertm
+sudo chmod a=r /sys/module/bluetooth/parameters/disable_ertm
